@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GuideApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello">Hello</string>
+
+    <dimen name="count">10dp</dimen>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="menu_refresh">Close navigation drawer</string>
+    <string name="share">Share</string>
+
+    <string-array name="countries">
+        <item>Monument</item>
+        <item>Hotel</item>
+        <item>Restaurant</item>
+        <item>Centre Commercial</item>
+        <item>Centre Medical</item>
+        <item>Pharmacie</item>
+    </string-array>
+
+    <string name="title_activity_activity_hotel">ActivityHotel</string>
+    <string name="title_activity_activity_monument">ActivityMonument</string>
+    <string name="title_activity_activity_restaurant">ActivityRestaurant</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string name="title_activity_web">Web</string>
+    <string name="title_activity_activity_pharmacie">ActivityPharmacie</string>
+    <string name="title_activity_activity_hotel_pager">ActivityHotelPager</string>
+    <string name="title_section1">Détails</string>
+    <string name="title_section2">Map</string>
+    <string name="title_section3">Contact</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_map_in_main">MapInMain</string>
+    <string name="title_activity_notify">NotifyActivity</string>
+    <string name="title_activity_authentification">AuthentificationActivity</string>
+    <string name="login_screen">Login Screen</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="Login">Login:</string>
+     
+    <string name="attempts">Attempts Left:</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_activity_monument_pager">Monuments</string>
+    <string name="title_activity_activity_restaurant_pager">Restaurants</string>
+    <string name="title_activity_activity_cmedical_pager">Centre Medicales</string>
+    <string name="title_activity_activity_medical_pager">Centre Medicales</string>
+    <string name="title_activity_activity_centre_medic">Centre Medicales</string>
+    <string name="title_activity_activity_ccommerce">Centre Commercials</string>
+    <string name="title_activity_activity_comme_pager">Centre Commercials</string>
+    <string name="title_activity_activity_pharma_pager">Pharmaciesr</string>
+    
+    
+    <string name="ipAdress">192.168.1.3</string>
+
+</resources>

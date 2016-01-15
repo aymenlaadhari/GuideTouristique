@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.navigation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="com.example.navigation.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.navigation.permission.MAPS_RECEIVE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/glogo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light" >
+        <activity
+            android:name="com.example.navigation.Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.navigation.MainActivity"
+            android:icon="@drawable/glogo"
+            android:label="@string/app_name" >
+
+            <!--
+           <meta-data android:name="android.support.UI_OPTIONS"
+           android:value="splitActionBarWhenNarrow" />
+            -->
+        </activity>
+        <activity
+            android:name="com.example.activities.ActivityHotel"
+            android:parentActivityName="com.example.navigation.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.example.activities.ActivityMonument"
+            android:label="@string/title_activity_activity_monument"
+            android:parentActivityName="com.example.navigation.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.example.activities.ActivityRestaurant"
+            android:label="@string/title_activity_activity_restaurant"
+            android:parentActivityName="com.example.navigation.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.example.activities.Web"
+            android:label="@string/title_activity_web"
+            android:parentActivityName="com.example.navigation.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
+            android:name="com.example.activities.ActivityPharmacie"
+            android:label="@string/title_activity_activity_pharmacie"
+            android:parentActivityName="com.example.navigation.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB1F9Fyhch_vaFLyJTOyXegEjLT3jEyKgc" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.example.activities.pager.ActivityHotelPager"
+            android:label="@string/title_activity_activity_hotel_pager" >
+        </activity>
+        <activity
+            android:name="com.example.activities.ContactActivity"
+            android:label="@string/title_activity_contact" >
+        </activity>
+        <activity
+            android:name="com.example.navigation.MapInMain"
+            android:label="@string/title_activity_map_in_main" >
+        </activity>
+
+        <service
+            android:name="com.example.navigation.MyAlarmService"
+            android:enabled="true" />
+
+        <receiver android:name="com.example.navigation.MyReceiver" />
+
+        <activity
+            android:name="com.example.navigation.AuthentificationActivity"
+            android:label="@string/title_activity_authentification" >
+        </activity>
+        <activity
+            android:name="com.example.navigation.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.activities.pager.ActivityMonumentPager"
+            android:label="@string/title_activity_activity_monument_pager" >
+        </activity>
+        <activity
+            android:name="com.example.activities.pager.ActivityRestaurantPager"
+            android:label="@string/title_activity_activity_restaurant_pager" >
+        </activity>
+        <activity
+            android:name="com.example.activities.ActivityCmedicalPager"
+            android:label="@string/title_activity_activity_cmedical_pager" >
+        </activity>
+        <activity
+            android:name="com.example.activities.pager.ActivityMedicalPager"
+            android:label="@string/title_activity_activity_medical_pager" >
+        </activity>
+        <activity
+            android:name="com.example.activities.ActivityCentreMedic"
+            android:label="@string/title_activity_activity_centre_medic" >
+        </activity>
+        <activity
+            android:name="com.example.activities.ActivityCcommerce"
+            android:label="@string/title_activity_activity_ccommerce" >
+        </activity>
+        <activity
+            android:name="com.example.activities.pager.ActivityCommePager"
+            android:label="@string/title_activity_activity_comme_pager" >
+        </activity>
+        <activity
+            android:name="com.example.activities.pager.ActivityPharmaPager"
+            android:label="@string/title_activity_activity_pharma_pager" >
+        </activity>
+    </application>
+
+</manifest>

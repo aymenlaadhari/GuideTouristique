@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/carreGlobalInterieur"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/GroupLigneOne"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/CategorieDeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Telephone"
+                        android:textColor="@color/wallet_holo_blue_light" />
+
+                    <View
+                        android:layout_width="242dp"
+                        android:layout_height="1dp"
+                        android:background="@color/wallet_holo_blue_light" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <ImageButton
+                        android:id="@+id/imageButtonTel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/wallet_holo_blue_light"
+                        android:src="@drawable/ic_action_call" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/contactTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="10.99 €"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/carreGlobalInterieur" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:text="Email" />
+
+            <View
+                android:layout_width="256dp"
+                android:layout_height="1dp"
+                android:background="@color/wallet_holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageButton
+                android:id="@+id/ImageButtonMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/wallet_holo_blue_light"
+                android:src="@drawable/ic_action_email" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="10.99 €"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout01"
+        android:layout_marginTop="40dp" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:text="Site Web" />
+
+            <View
+                android:layout_width="254dp"
+                android:layout_height="1dp"
+                android:background="@color/wallet_holo_blue_light" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <ImageButton
+                android:id="@+id/ImageButtonWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/wallet_holo_blue_light"
+                android:src="@drawable/ic_action_web_site" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contactWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="10.99 €"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/RelativeLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout02"
+        android:layout_marginTop="38dp" >
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="254dp"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/carreGlobalInterieur"
+        android:layout_below="@+id/RelativeLayout02"
+        android:layout_marginTop="18dp"
+        android:background="@color/wallet_holo_blue_light" />
+
+    <ImageButton
+        android:id="@+id/ImageButtonShare"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/RelativeLayout03"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:background="@color/wallet_holo_blue_light"
+        android:src="@drawable/ic_action_share" />
+
+</RelativeLayout>
